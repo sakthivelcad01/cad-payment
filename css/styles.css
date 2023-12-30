@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+.hero {
+  text-align: center;
+  padding: 50px;
+}
+button {
+  background-color: #47a8f5;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+.feature {
+      border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 250px;
+    font-family: Snap ITC;
+    padding-bottom: 0px;
+    background-color: white;
+    padding-right: 20PX;
+    padding-left: 20px;
+}
+.feature img {
+  width: 100px;
+  height: 100px;
+}
+.cta {
+  text-align: center;
+  padding: 50px;
+  background-color: #47a8f5;
+  color: #fff;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: black; 
+}
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  background-color:#333;
+  padding:30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+li{
+  float: left;
+  border-right: 1px transparent;
+}
+li a{
+  padding: 20px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+.hero{
+  color:#333;
+}
+li.sd{
+  float: right;
+}
