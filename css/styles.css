@@ -9,7 +9,7 @@
 }
 .head-index {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: #333;
   
 }
@@ -32,13 +32,13 @@ button:hover {
 
 .cta {
   text-align: center;
-  padding: 20px;
+  padding: 5px;
   background-color: #47a8f5;
   color: #fff;
 }
 .index-foot {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   background-color: white;
   color: black; 
 }
@@ -55,10 +55,13 @@ ul{
   position:sticky; 
   top:0;
 }
-.log{
+.features p{
+	margin-bottom: 10px;
+}
+ul li .log{
 	text-align: right;
 }
-li a{
+ul li a{
 	float: left;
   color: #fff;
   text-decoration: none;
@@ -138,7 +141,7 @@ backdrop-filter: blur( 8.5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 width: 250px;
-height:350px;
+height:250px;
 align-items: center;
 justify-content:center ;
 width: 1300px;
