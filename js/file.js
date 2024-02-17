@@ -1,22 +1,42 @@
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+function signupclick(){
+var usr = document.getElementById("userName").value;
+
+var pas = document.getElementById("password").value;
+
+var emal = document.getElementById("email").value;
+
+  localStorage.setItem("userName",usr);   
+  localStorage.setItem("password",pas);
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
+  window.open("logon.html");
+}
+
+function login() {
+
   
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  var storedName = localStorage.getItem("userName");
+  var storedPw = localStorage.getItem("password");
+
+  var name = document.getElementById("user");
+  var userPw = document.getElementById("pass");
+
+  if(name.value == storedName && userPw.value == storedPw) {
+    window.open("logon.html");
+}else {
+    alert('ERROR.');
+}
+}
+
+function printdemo(){
+
+  var storedName = localStorage.getItem("userName");
+  var storedPw = localStorage.getItem("password");
+  console.log(storedName);
+  console.log(storedPw);
   
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  });
+}
+
+
+  
+

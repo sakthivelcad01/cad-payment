@@ -61,7 +61,7 @@ ul{
   top:0;
 }
 .features li{
-	color: #47a8f5;
+	color: rgb(248, 198, 132);
 }
 .features h2{
 	margin-bottom: 5px;
@@ -75,9 +75,10 @@ ul{
 
 span {
 	color: transparent;
-  font-size: 29px;
+  font-size: 35px;
 	animation: blur 10s ease-out infinite;
 	-webkit-animation: blur 10s ease-out infinite;
+	letter-spacing: 13px;
 }
 
 span:nth-child(1) {
@@ -247,7 +248,7 @@ justify-content:center;
 	font-size: 12px; 
 	height: 25px; 
 	padding:0 20px;
-	width: 90px;
+	width: 85px;
 }
 .login-form .group label .icon{
 	width:15px;
@@ -282,14 +283,13 @@ justify-content:center;
 }
 .login-form .group .check:checked + label .icon{
 	background:#1161ee;
-}
-.login-form .group .check:checked + label .icon:before{
+}.login-form .group .check:checked + label .icon:before{
 	transform:scale(1) rotate(45deg);
 }
 .login-form .group .check:checked + label .icon:after{
 	transform:scale(1) rotate(-45deg);
-}
-.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+} 
+ .login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
 	transform:rotate(0);
 }
 .login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
@@ -307,7 +307,7 @@ justify-content:center;
 .foot-lnk a{
 	text-decoration: none;
 }
-.login-form .group input[type=submit]:hover{
+button:hover{
 	background-color: white;
 	color: black;
 	border-radius: 25px;
@@ -440,4 +440,15 @@ h1 {
   }
   .clr{
 	margin-bottom: 0px;
+  }
+  .lgon-form{
+	box-sizing: border-box;
+	height: 250px;
+	width: 250px;
+	border-radius: 20px;
+	border: 1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+	margin-left: 50px;
+	float: right;
+
   }

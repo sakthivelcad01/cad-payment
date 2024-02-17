@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title></title>
 </head>
@@ -18,7 +19,7 @@
                 <div class="sign-in-htm">
                     <div class="group">
                         <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
+                        <input id="user" key="user" type="text" class="input">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Password</label>
@@ -29,8 +30,8 @@
                         <label for="check"><span class="icon"></span> Keep me Signed in</label><br>
                     </div><br>
                     <div class="group">
-                        <input type="submit" class="button" value="Sign In">
-                        <input type="submit" class="button" value="Cancel" onclick="window.location.href='index.html'"></input>
+                        <button id="myButton" class="button" onclick="login()">Sign In</button>
+                        <button onclick="location.href = 'index.html';" id="button" class="button" >Cancel</button>
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
@@ -38,34 +39,38 @@
                     </div>
                 </div>
                 <div class="sign-up-htm">
+                    <form action="otherpage.html" method="post">
                     <div class="group">
                         <label for="user" class="label">Username</label>
-                        <input id="user" type="text" class="input">
+                        <input id="userName" type="text" class="input">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
+                        <input id="password" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
                         <label for="pass" class="label">Repeat Password</label>
-                        <input id="pass" type="password" class="input" data-type="password">
+                        <input id="password" type="password" class="input" data-type="password">
                     </div>
                     <div class="group">
-                        <label for="pass" class="label">Email Address</label>
-                        <input id="pass" type="text" class="input">
+                        <label for="email" class="label">Email Address</label>
+                        <input id="email" type="text" class="input">
                     </div><br><br><br>
                     <div class="group">
-                        <input type="submit" class="button" value="Sign Up">
-                        <input type="submit" class="button" value="Cancel" onclick="window.location.href='index.html'"></input>
+                        <button type="button" id="myButton" class="button" onclick="signupclick()" value="Sign Up">Sign Up</button>
+                        <button onclick="window.location.href('index.html')"; id="button" class="button" >Cancel</button>
                     </div>
                     <div class="hr"></div>
                     <div class="foot-lnk">
                         <label for="tab-1" style="cursor: pointer;">Already Member?</a>
                     </div>
+                </form>
                 </div>
             </div>
         </div>
     </div>
 </center>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script src="js/file.js"></script>
 </body>
 </html>
